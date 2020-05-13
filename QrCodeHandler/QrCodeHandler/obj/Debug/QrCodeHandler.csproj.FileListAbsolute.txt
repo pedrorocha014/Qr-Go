@@ -1,0 +1,11 @@
+C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\QrCodeHandler\QrCodeHandler\bin\Debug\QrCodeHandler.exe.config
+C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\QrCodeHandler\QrCodeHandler\bin\Debug\QrCodeHandler.exe
+C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\QrCodeHandler\QrCodeHandler\bin\Debug\QrCodeHandler.pdb
+C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\QrCodeHandler\QrCodeHandler\obj\Debug\QrCodeHandler.csprojAssemblyReference.cache
+C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\QrCodeHandler\QrCodeHandler\obj\Debug\QrCodeHandler.Form1.resources
+C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\QrCodeHandler\QrCodeHandler\obj\Debug\QrCodeHandler.Pages.PageCreate.resources
+C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\QrCodeHandler\QrCodeHandler\obj\Debug\QrCodeHandler.Properties.Resources.resources
+C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\QrCodeHandler\QrCodeHandler\obj\Debug\QrCodeHandler.csproj.GenerateResource.cache
+C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\QrCodeHandler\QrCodeHandler\obj\Debug\QrCodeHandler.csproj.CoreCompileInputs.cache
+C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\QrCodeHandler\QrCodeHandler\obj\Debug\QrCodeHandler.exe
+C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\QrCodeHandler\QrCodeHandler\obj\Debug\QrCodeHandler.pdb

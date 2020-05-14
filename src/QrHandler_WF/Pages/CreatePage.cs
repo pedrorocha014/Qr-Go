@@ -41,7 +41,7 @@ namespace QrHandler_WF.Pages
             }
             catch (Exception)
             {
-                DialogResult info = MessageBox.Show("Informe o conteúdo do QR Code.", "Falta de argumento.", MessageBoxButtons.OK);
+                DialogResult info = MessageBox.Show("Enter the content of the QR Code.", "Lack of argument.", MessageBoxButtons.OK);
             }
         }
     }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-using QrHandler_WF.Scripts;
 using System.Drawing;
 
 namespace QrHandler_WF.Pages
@@ -29,10 +28,11 @@ namespace QrHandler_WF.Pages
             try
             {
                 imageToSave.Save(path + "\\qrCode.png");
+                DialogResult info = MessageBox.Show("Image saved successfully.", "Confirmation message.", MessageBoxButtons.OK);
             }
             catch (Exception)
             {
-                DialogResult info = MessageBox.Show("Informe o local onde deseja salvar a imagem.", "Falta de argumento.", MessageBoxButtons.OK);
+                DialogResult info = MessageBox.Show("Enter the location where you want to save the image.", "Lack of argument.", MessageBoxButtons.OK);
             }
         }
 

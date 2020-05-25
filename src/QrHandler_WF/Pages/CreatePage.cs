@@ -1,27 +1,16 @@
 ﻿using System;
-using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 using QRCoder;
+using QrHandler_WF.Presenter;
+using QrHandler_WF.View;
 
 namespace QrHandler_WF.Pages
 {
-    public partial class CreatePage : UserControl
+    public partial class CreatePage : UserControl, ICreatePage
     {
-        private QRCodeGenerator qrCodeGenerator;
-        private QRCodeData qrCodeData;
-        private QRCode qrCode;
-
-        private Image image;
-
-        #region"Properties"
-        [Category("QR Code")]
-        public Image Image
-        {
-            get { return image; }
-            set { image = value; pictureBox1.Image = value; }
-        }
-        #endregion
+        public string QRContent => contentInputField.Text;
+        public Image QRImage { get => pictureBox1.Image; set => pictureBox1.Image = value; }
 
         public CreatePage()
         {
@@ -30,19 +19,8 @@ namespace QrHandler_WF.Pages
 
         private void createQrButton_Click(object sender, EventArgs e)
         {
-            try
-            {
-                qrCodeGenerator = new QRCodeGenerator();
-                qrCodeData = qrCodeGenerator.CreateQrCode(contentInputField.Text, QRCodeGenerator.ECCLevel.Q);
-                qrCode = new QRCode(qrCodeData);
-
-                Image qrCodeImage = qrCode.GetGraphic(5);
-                Image = qrCodeImage;
-            }
-            catch (Exception)
-            {
-                DialogResult info = MessageBox.Show("Enter the content of the QR Code.", "Lack of argument.", MessageBoxButtons.OK);
-            }
+            CreatePresenter presenter = new CreatePresenter(this);
+            presenter.GetQrCode();
         }
     }
 }

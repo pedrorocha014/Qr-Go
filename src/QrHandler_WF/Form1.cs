@@ -27,7 +27,7 @@ namespace QrHandler_WF
 
         private void PassImageBetweenPages()
         {
-            downloadPage.ImageToSave = createPage.Image;
+            downloadPage.DownloadImage = createPage.QRImage;
         }
 
         private void exitButton_Click(object sender, EventArgs e)

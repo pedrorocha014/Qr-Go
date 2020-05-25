@@ -96,6 +96,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\CreatePage\CreateModel.cs" />
+    <Compile Include="Model\DownloadPage\DownloadModel.cs" />
     <Compile Include="Pages\CreatePage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -108,8 +110,12 @@
     <Compile Include="Pages\DownloadPage.Designer.cs">
       <DependentUpon>DownloadPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presenter\CreatePage\CreatePresenter.cs" />
+    <Compile Include="Presenter\DownloadPage\DownloadPresenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\CreatePage\ICreatePage.cs" />
+    <Compile Include="View\DownloadPage\IDownloadPage.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

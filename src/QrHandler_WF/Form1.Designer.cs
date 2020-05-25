@@ -121,7 +121,6 @@
             // 
             // createPage
             // 
-            this.createPage.Image = null;
             this.createPage.Location = new System.Drawing.Point(297, 35);
             this.createPage.Name = "createPage";
             this.createPage.Size = new System.Drawing.Size(304, 384);
@@ -129,7 +128,6 @@
             // 
             // downloadPage
             // 
-            this.downloadPage.ImageToSave = null;
             this.downloadPage.Location = new System.Drawing.Point(297, 35);
             this.downloadPage.Name = "downloadPage";
             this.downloadPage.Size = new System.Drawing.Size(304, 384);

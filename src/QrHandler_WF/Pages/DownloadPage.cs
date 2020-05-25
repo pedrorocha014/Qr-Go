@@ -1,49 +1,43 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Drawing;
+using QrHandler_WF.View.DownloadPage;
+using QrHandler_WF.Presenter.DownloadPage;
 
 namespace QrHandler_WF.Pages
 {
-    public partial class DownloadPage : UserControl
+    public partial class DownloadPage : UserControl, IDownloadPage
     {
-        private string path;
+        private string pathToSave;
+        private Image dowloadImage;
+        private DownloadPresenter presenter;
 
-        private Image imageToSave;
-
-        #region"Properties"
-        public Image ImageToSave
-        {
-            get { return imageToSave; }
-            set { imageToSave = value; }
+        public Image DownloadImage { get => dowloadImage; set => dowloadImage = value; }
+        public string PathToSave {
+            get {
+                return pathToSave;
+            }
+            set
+            {
+                pathToSave = value;
+                pathInputField.Text = pathToSave;
+            }
         }
-        #endregion
 
         public DownloadPage()
         {
             InitializeComponent();
+            presenter = new DownloadPresenter(this);
         }
 
         private void downloadBtn_Click(object sender, EventArgs e)
         {
-            try
-            {
-                imageToSave.Save(path + "\\qrCode.png");
-                DialogResult info = MessageBox.Show("Image saved successfully.", "Confirmation message.", MessageBoxButtons.OK);
-            }
-            catch (Exception)
-            {
-                DialogResult info = MessageBox.Show("Enter the location where you want to save the image.", "Lack of argument.", MessageBoxButtons.OK);
-            }
+            presenter.ExecuteDownload();
         }
 
         private void folderSearchButton_Click(object sender, EventArgs e)
         {
-            using (FolderBrowserDialog openFolderDialog = new FolderBrowserDialog())
-            {
-                openFolderDialog.ShowDialog();
-                path = openFolderDialog.SelectedPath;
-                pathInputField.Text = path;
-            }
+            presenter.GetPathToDownload();
         }
     }
 }

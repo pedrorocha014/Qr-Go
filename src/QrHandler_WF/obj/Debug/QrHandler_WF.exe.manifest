@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QrHandler_WF.exe" size="19424">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QrHandler_WF.exe" size="20448">
       <assemblyIdentity name="QrHandler_WF" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>4OiYKJjvlZSQoBGOdLmaKOjIk/9+6YqJoHbDqfI0ufo=</dsig:DigestValue>
+        <dsig:DigestValue>AEGBMcAHAjZOJsf4JmJbxtJaHsofj90x0CM5bc7xtQ0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

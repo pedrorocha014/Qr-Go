@@ -19,7 +19,6 @@ C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\QrHandler\QrHandler_WF\
 C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\QrHandler\QrHandler_WF\obj\Debug\QrHandler_WF.Pages.DownloadPage.resources
 C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\QrHandler\QrHandler_WF\bin\Debug\QRCoder.dll
 C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\src\QrHandler_WF\obj\Debug\QrHandler_WF.csprojAssemblyReference.cache
-C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\src\QrHandler_WF\obj\Debug\QrHandler_WF.Form1.resources
 C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\src\QrHandler_WF\obj\Debug\QrHandler_WF.Pages.CreatePage.resources
 C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\src\QrHandler_WF\obj\Debug\QrHandler_WF.Pages.DownloadPage.resources
 C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\src\QrHandler_WF\obj\Debug\QrHandler_WF.Properties.Resources.resources
@@ -38,3 +37,4 @@ C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\src\QrHandler_WF\obj\De
 C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\src\QrHandler_WF\obj\Debug\QrHandler_WF.exe.manifest
 C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\src\QrHandler_WF\obj\Debug\QrHandler_WF.application
 C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\src\QrHandler_WF\obj\Debug\QrHandler_WF.csproj.CopyComplete
+C:\Users\55719\Documents\Projects\VisualStudio\QrHandler\src\QrHandler_WF\obj\Debug\QrHandler_WF.MainForm.resources

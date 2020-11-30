@@ -1,26 +1,28 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QrHandler_WF
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
-
         private void createButton_Click(object sender, EventArgs e)
         {
-            slider.Height = createButton.Height;
-            slider.Top = createButton.Top;
             createPage.BringToFront();
         }
 
         private void downloadButton_Click(object sender, EventArgs e)
         {
-            slider.Height = downloadButton.Height;
-            slider.Top = downloadButton.Top;
             PassImageBetweenPages();
             downloadPage.BringToFront();
         }
@@ -34,7 +36,5 @@ namespace QrHandler_WF
         {
             Application.Exit();
         }
-
-        
     }
 }

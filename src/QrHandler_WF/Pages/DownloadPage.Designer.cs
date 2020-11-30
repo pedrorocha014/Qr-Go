@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DownloadPage));
             this.downloadButton = new System.Windows.Forms.Button();
             this.pathInputField = new System.Windows.Forms.TextBox();
             this.pathLabel = new System.Windows.Forms.Label();
@@ -38,11 +39,12 @@
             // 
             this.downloadButton.FlatAppearance.BorderSize = 0;
             this.downloadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.downloadButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.downloadButton.ForeColor = System.Drawing.Color.Black;
-            this.downloadButton.Location = new System.Drawing.Point(79, 307);
+            this.downloadButton.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
+            this.downloadButton.ForeColor = System.Drawing.Color.White;
+            this.downloadButton.Image = ((System.Drawing.Image)(resources.GetObject("downloadButton.Image")));
+            this.downloadButton.Location = new System.Drawing.Point(19, 336);
             this.downloadButton.Name = "downloadButton";
-            this.downloadButton.Size = new System.Drawing.Size(142, 36);
+            this.downloadButton.Size = new System.Drawing.Size(262, 36);
             this.downloadButton.TabIndex = 0;
             this.downloadButton.Text = "DOWNLOAD";
             this.downloadButton.UseVisualStyleBackColor = true;
@@ -50,7 +52,7 @@
             // 
             // pathInputField
             // 
-            this.pathInputField.Location = new System.Drawing.Point(3, 256);
+            this.pathInputField.Location = new System.Drawing.Point(3, 288);
             this.pathInputField.Name = "pathInputField";
             this.pathInputField.Size = new System.Drawing.Size(259, 20);
             this.pathInputField.TabIndex = 1;
@@ -59,7 +61,7 @@
             // 
             this.pathLabel.AutoSize = true;
             this.pathLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pathLabel.Location = new System.Drawing.Point(3, 232);
+            this.pathLabel.Location = new System.Drawing.Point(3, 264);
             this.pathLabel.Name = "pathLabel";
             this.pathLabel.Size = new System.Drawing.Size(88, 21);
             this.pathLabel.TabIndex = 2;
@@ -67,7 +69,7 @@
             // 
             // folderSearchButton
             // 
-            this.folderSearchButton.Location = new System.Drawing.Point(268, 254);
+            this.folderSearchButton.Location = new System.Drawing.Point(268, 286);
             this.folderSearchButton.Name = "folderSearchButton";
             this.folderSearchButton.Size = new System.Drawing.Size(33, 23);
             this.folderSearchButton.TabIndex = 3;
@@ -79,6 +81,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.folderSearchButton);
             this.Controls.Add(this.pathLabel);
             this.Controls.Add(this.pathInputField);

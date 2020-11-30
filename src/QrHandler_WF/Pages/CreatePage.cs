@@ -10,7 +10,7 @@ namespace QrHandler_WF.Pages
     public partial class CreatePage : UserControl, ICreatePage
     {
         public string QRContent => contentInputField.Text;
-        public Image QRImage { get => pictureBox1.Image; set => pictureBox1.Image = value; }
+        public Image QRImage { get => pictureBox1.Image; set => ChangeQrImage (value); }
 
         public CreatePage()
         {
@@ -21,6 +21,13 @@ namespace QrHandler_WF.Pages
         {
             CreatePresenter presenter = new CreatePresenter(this);
             presenter.GetQrCode();
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+        }
+
+        private void ChangeQrImage(Image image)
+        {
+            pictureBox1.Image = image;
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
         }
     }
 }

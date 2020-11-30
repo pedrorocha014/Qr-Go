@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreatePage));
             this.contentInputField = new System.Windows.Forms.TextBox();
             this.createQrButton = new System.Windows.Forms.Button();
             this.contentLabel = new System.Windows.Forms.Label();
@@ -37,19 +38,21 @@
             // 
             // contentInputField
             // 
-            this.contentInputField.Location = new System.Drawing.Point(9, 268);
+            this.contentInputField.Location = new System.Drawing.Point(29, 305);
             this.contentInputField.Name = "contentInputField";
-            this.contentInputField.Size = new System.Drawing.Size(292, 20);
+            this.contentInputField.Size = new System.Drawing.Size(250, 20);
             this.contentInputField.TabIndex = 5;
             // 
             // createQrButton
             // 
             this.createQrButton.FlatAppearance.BorderSize = 0;
             this.createQrButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.createQrButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createQrButton.Location = new System.Drawing.Point(55, 312);
+            this.createQrButton.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createQrButton.ForeColor = System.Drawing.Color.White;
+            this.createQrButton.Image = ((System.Drawing.Image)(resources.GetObject("createQrButton.Image")));
+            this.createQrButton.Location = new System.Drawing.Point(29, 328);
             this.createQrButton.Name = "createQrButton";
-            this.createQrButton.Size = new System.Drawing.Size(200, 35);
+            this.createQrButton.Size = new System.Drawing.Size(250, 53);
             this.createQrButton.TabIndex = 4;
             this.createQrButton.Text = "CREATE";
             this.createQrButton.UseVisualStyleBackColor = true;
@@ -59,7 +62,7 @@
             // 
             this.contentLabel.AutoSize = true;
             this.contentLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contentLabel.Location = new System.Drawing.Point(5, 245);
+            this.contentLabel.Location = new System.Drawing.Point(25, 282);
             this.contentLabel.Name = "contentLabel";
             this.contentLabel.Size = new System.Drawing.Size(73, 20);
             this.contentLabel.TabIndex = 7;
@@ -67,9 +70,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(29, 14);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(298, 239);
+            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
@@ -77,6 +80,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.contentLabel);
             this.Controls.Add(this.contentInputField);

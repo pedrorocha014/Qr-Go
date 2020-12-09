@@ -1,4 +1,4 @@
-# QrCode_Generator
+# QR GO
 QrCode_Generator is a Windows Forms project focused on generating personalized and free QR codes. 
 
 ## Usage
